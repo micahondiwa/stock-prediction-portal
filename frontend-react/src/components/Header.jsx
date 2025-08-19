@@ -13,9 +13,9 @@ const Header = () => {
                     </Link>
                 </div>
                 <div>
-                    <Button text='Login' class='btn-outline-info' />
+                    <Button text='Login' class='btn-outline-info' url='/login' />
                     &nbsp;
-                    <Button text='Register' class='btn-info' />
+                    <Button text='Register' class='btn-info' url='/register' />
                 </div>
             </nav>
         </>
