@@ -6,6 +6,8 @@ function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({});
+    const [success, setSuccess] = useState(false);
+
 
     const handleRegistration = async (e) => {
         e.preventDefault();
@@ -16,6 +18,7 @@ function Register() {
             console.log('response.data==>', response.data);
             console.log('Registration Successful');
             setErrors({});
+            setSuccess(true);
         } catch (error) {
             if (error.response) {
                 setErrors(error.response.data);
@@ -59,7 +62,7 @@ function Register() {
                             />
                             {errors.email && <small className='text-danger'>{errors.email}</small>}
                         </div>
-                        <div className="mb-5">
+                        <div className="mb-3">
                             <input
                                 type='password'
                                 className='form-control mb-3'
@@ -69,6 +72,7 @@ function Register() {
                             />
                             {errors.password && <small className='text-danger'>{errors.password}</small>}
                         </div>
+                        {success && <div className="alert alert-success" role='alert'>Registration Successful!</div>}
                         <button type='submit' className='btn btn-info d-block mx-auto mt-3'>Register</button>
                     </form>
                 </div>
