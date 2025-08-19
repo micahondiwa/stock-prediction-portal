@@ -1,1 +1,1 @@
-# Django + React Full Stack Stcok Prediction Portal
+# Django + React Full Stack Stock Prediction Portal
