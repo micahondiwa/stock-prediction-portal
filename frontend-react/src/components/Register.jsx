@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 function Register() {
     return (
-        <div>Register</div>
+        <>
+        </>
     )
 }
 
