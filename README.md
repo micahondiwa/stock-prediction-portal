@@ -1,4 +1,8 @@
 # Django + React Full Stack Stock Prediction Portal
 
-## Home 
+## Landing Page
+
 ![alt text](home.png)
+
+# Registration Page
+![alt text](register.png)
