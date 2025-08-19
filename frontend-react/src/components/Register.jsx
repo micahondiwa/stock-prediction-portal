@@ -7,10 +7,12 @@ function Register() {
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({});
     const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
 
 
     const handleRegistration = async (e) => {
         e.preventDefault();
+        setLoading(true)
         const userData = { username, email, password };
 
         try {
@@ -30,6 +32,8 @@ function Register() {
                 console.error("Unexpected error:", error.message);
                 setErrors({ general: "Unexpected error: " + error.message });
             }
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -73,7 +77,11 @@ function Register() {
                             {errors.password && <small className='text-danger'>{errors.password}</small>}
                         </div>
                         {success && <div className="alert alert-success" role='alert'>Registration Successful!</div>}
-                        <button type='submit' className='btn btn-info d-block mx-auto mt-3'>Register</button>
+                        {loading ? (
+                            <button type='submit' className='btn btn-info d-block mx-auto mt-3' disabled>Please wait...</button>
+                        ) : (
+                            <button type='submit' className='btn btn-info d-block mx-auto mt-3'>Register</button>
+                        )}
                     </form>
                 </div>
             </div>
