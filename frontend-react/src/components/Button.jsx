@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Button() {
+function Button(props) {
     return (
-        <div>Button</div>
+        <>
+            <a className={`btn ${props.class}`} href='#'>{props.text}</a >
+        </>
     )
 }
 
