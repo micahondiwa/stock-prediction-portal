@@ -9,7 +9,7 @@ const Header = () => {
                 <div>
                     <a className='btn btn-outline-info' href=''>Login</a>
                     &nbsp;
-                    <a className='btn btn-info' href=''>Login</a>
+                    <a className='btn btn-info' href=''>Register</a>
                 </div>
             </nav>
         </>
