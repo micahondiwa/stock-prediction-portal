@@ -15,10 +15,10 @@ function Register() {
             const response = await axios.post('http://127.0.0.1:8000/api/v1/register/', userData);
             console.log('response.data==>', response.data);
             console.log('Registration Successful');
-            setErrors({}); // clear errors on success
+            setErrors({});
         } catch (error) {
             if (error.response) {
-                setErrors(error.response.data); // <-- FIXED HERE
+                setErrors(error.response.data);
                 console.error('Registration error: ', error.response.data);
             } else if (error.request) {
                 console.error("No response from server:", error.request);
