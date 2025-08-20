@@ -21,4 +21,18 @@ axiosInstance.interceptors.request.use(
         return Promise.reject(error);
     }
 )
+
+// Response Interceptors
+axiosInstance.interceptors.response.use(
+    function (response) {
+        return response;
+    },
+    // handle failed responses 
+    function (error) {
+        const originalRequest = error.config;
+        if (error.response.status === 401 && !originalRequest.retry) {
+            originalRequest.retry = true;
+        }
+    }
+)
 export default axiosInstance;
