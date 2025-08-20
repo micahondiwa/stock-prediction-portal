@@ -27,7 +27,7 @@ function Header() {
                 style={{ height: "200px", width: "200px" }}
             />
 
-            <Link className="btn btn-info" to="/">Home</Link>
+            {/* <Link className="btn btn-info" to="/">Home</Link> */}
 
             <div className="ms-auto">
                 {isLoggedIn ? (
