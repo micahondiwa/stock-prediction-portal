@@ -28,10 +28,19 @@ axiosInstance.interceptors.response.use(
         return response;
     },
     // handle failed responses 
-    function (error) {
+    function async(error) {
         const originalRequest = error.config;
         if (error.response.status === 401 && !originalRequest.retry) {
             originalRequest.retry = true;
+            const refreshToken = localStorage.getItem('refreshToken');
+            try {
+                const response = await axiosInstance.post('/token/refresh', { refresh: refreshToken })
+                localStorage.setItem('accessToken', response.data.acess)
+                originalRequest.headers['Authorization' = `Bearer ${response.data.acess}`]
+                return axiosInstance(originalRequest)
+            } catch () {
+                return false;
+            }
         }
     }
 )
