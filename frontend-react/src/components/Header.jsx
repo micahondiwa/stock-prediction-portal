@@ -20,12 +20,14 @@ function Header() {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-            <img
-                src={logo}
-                alt="Logo"
-                className="me-2"
-                style={{ height: "200px", width: "200px" }}
-            />
+            <Link to='/'>
+                <img
+                    src={logo}
+                    alt="Logo"
+                    className="me-2"
+                    style={{ height: "200px", width: "200px" }}
+                />
+            </Link>
 
             {/* <Link className="btn btn-info" to="/">Home</Link> */}
 
