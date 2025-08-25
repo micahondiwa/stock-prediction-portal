@@ -1,8 +1,9 @@
 import axios from 'axios';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../axiosInstance';
 
 const Dashboard = () => {
+    const [ticker, setTicker] = useState('');
     useEffect(() => {
         const fetchProtectedData = async () => {
             try {
@@ -18,7 +19,9 @@ const Dashboard = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-md-6'>
-
+                    <form>
+                        <input type='text' className='form-control' placeholder='Enter Stock Ticker' />
+                    </form>
                 </div>
             </div>
         </div>
