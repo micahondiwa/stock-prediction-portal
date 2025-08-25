@@ -33,6 +33,8 @@ const Dashboard = () => {
             }
         } catch (error) {
             console.error('There was an error making the API request', error)
+        } finally {
+            setLoading(false)
         }
     }
     return (
@@ -44,7 +46,9 @@ const Dashboard = () => {
                             onChange={(e) => setTicker(e.target.value)} required
                         />
                         <small>{error && <div className='text-danger'>{error}</div>}</small>
-                        <button type='submit' className='btn btn-info mt-3'>See Prediction</button>
+                        <button type='submit' className='btn btn-info mt-3'>
+                            {loading ? <span> <FontAwesomeIcon icon={faSpinner} spin /> Please wait...</span> : 'See Prediction'}
+                        </button>
                     </form>
                 </div>
             </div>
