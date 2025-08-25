@@ -8,7 +8,7 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
-    path('protected-view/', USerViews.ProtectedView.as_view())
+    path('protected-view/', USerViews.ProtectedView.as_view()),
 
     # Prediction API
     path('predict/', StockPredictionAPIView.as_view(), name='stock_prediction')
