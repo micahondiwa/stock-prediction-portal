@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import axiosInstance from '../../axiosInstance';
 
 const Dashboard = () => {
-    const [ticker, setTicker] = useState('');
+    const [ticker, setTicker] = useState('')
+    const [error, setError] = useState('')
     useEffect(() => {
         const fetchProtectedData = async () => {
             try {
