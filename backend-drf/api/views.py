@@ -24,7 +24,6 @@ class StockPredictionAPIView(APIView):
             now = datetime.now()
             start = datetime(now.year-10, now.month, now.day)
             end  = now 
-            ticker = 'AAPL'
             df = yf.download(ticker, start, end)
             if df.empty:
                 return Response({'error': 'No data found for the given ticker.',
