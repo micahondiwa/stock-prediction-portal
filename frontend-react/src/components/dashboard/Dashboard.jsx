@@ -7,6 +7,7 @@ import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 const Dashboard = () => {
     const [ticker, setTicker] = useState('')
     const [error, setError] = useState()
+    const [loading, setLoading] = useState(false)
 
     useEffect(() => {
         const fetchProtectedData = async () => {
