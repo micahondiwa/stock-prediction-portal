@@ -10,4 +10,4 @@ class StockPredictionAPIView(APIView):
         serializer = StockPredictionSerializer(data=request.data)
         if serializer.is_valid():
             ticker = serializer.validated_data['ticker']
-            return Response({'status': 'success'})
+            return Response({'status': 'success', 'ticker': ticker})
