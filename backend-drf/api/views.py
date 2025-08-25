@@ -27,6 +27,6 @@ class StockPredictionAPIView(APIView):
             ticker = 'AAPL'
             df = yf.download(ticker, start, end)
             if df.empty:
-                return Response({'error': 'No data found for the given ticker.'
+                return Response({'error': 'No data found for the given ticker.',
                                  'status': status.HTTP_404_NOT_FOUND})
             return Response({'status': 'success', 'ticker': ticker})
