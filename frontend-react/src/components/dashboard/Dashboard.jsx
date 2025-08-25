@@ -19,8 +19,10 @@ const Dashboard = () => {
         }
         fetchProtectedData();
     }, [])
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true)
         try {
             const response = await axiosInstance.post('/predict/', {
                 ticker: ticker
