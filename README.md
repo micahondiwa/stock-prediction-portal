@@ -9,4 +9,4 @@
 ![alt text](login.png)
 # Dashboard
 ![alt text](dashboard.png)
-![alt text](dashbaord-1.png)
+![alt text](dashboard-1.png)
