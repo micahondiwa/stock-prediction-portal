@@ -7,3 +7,6 @@
 ![alt text](register.png)
 # Login Page
 ![alt text](login.png)
+# Dashboard
+![alt text](dashboard.png)
+![alt text](dashbaord-1.png)
