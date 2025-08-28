@@ -52,11 +52,6 @@ stock-prediction-portal/
 │
 ├── README.md
 ├── .gitignore
-├── dashboard-1.png           # Screenshots
-├── dashboard.png
-├── home.png
-├── login.png
-├── register.png
 
 
 **5. Connecting React and Django with Axios**
