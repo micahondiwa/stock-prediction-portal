@@ -35,7 +35,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 
 ## 4. Machine Learning Model (LSTM)
 
-The stock prediction engine is powered by a [Long Short-Term Memory (LSTM)](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) neural network built with TensorFlow/Keras. For the default model, [LSTM](https://keras.io/api/layers/recurrent_layers/lstm/) is suitable in this scenario becasue of its ability to capture long-term dependencies in a time-series data. Additionally, stock prices are sequential and the patterns in the stock price dynamics can span many days or weeks putting LSTM in a better position to learn the trends than a simple feed-forward neural network. The full code for data retrieval, EDA and model training is available in the [Resources](Resources) folder. 
+The stock prediction engine is powered by a [Long Short-Term Memory (LSTM)](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM) neural network built with TensorFlow/Keras. For the default model, [Keras LSTM layer](https://keras.io/api/layers/recurrent_layers/lstm/) is suitable in this scenario becasue of its ability to capture long-term dependencies in a time-series data. Additionally, stock prices are sequential and the patterns in the stock price dynamics can span many days or weeks putting LSTM in a better position to learn the trends than a simple feed-forward neural network. The full code for data retrieval, EDA and model training is available in the [Resources](Resources) folder. 
 
 **Model Architecture**
 ```
