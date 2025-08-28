@@ -32,7 +32,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 **Database**
 - SQLite
 
-**Project Structure**
+**4. Project Structure**
 stock-prediction-portal/
 │
 ├── backend-drf/
@@ -57,4 +57,7 @@ stock-prediction-portal/
 ├── home.png
 ├── login.png
 ├── register.png
-└── requirements.txt          # (Possibly duplicate—ensure backend uses the correct one)
+
+
+**5. Connecting React and Django with Axios**
+**1. Authentication (Login Example)**
