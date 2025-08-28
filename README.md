@@ -198,6 +198,16 @@ CORS_ALLOWED_ORIGINS = [
 ]
 ```
 
+- Setting up DRF with [JWT](https://www.django-rest-framework.org/api-guide/authentication/) authentication:
+```
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
+
+```
+
 ## 6. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
