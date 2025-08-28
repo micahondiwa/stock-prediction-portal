@@ -161,7 +161,7 @@ const handlePrediction = async () => {
         alert("Enter the correct ticker.");
     }
 };
-
+```
 
 
 **C. Displaying Plots in React**
