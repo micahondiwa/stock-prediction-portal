@@ -54,7 +54,9 @@ stock-prediction-portal/
 │   ├── api/migrations/views.py
 │   ├── media/ # Stores generated plots
 │   ├── stock_prediction_main/asgi.py
-│   ├── stock_prediction_main/
+│   ├── stock_prediction_main/settings.py
+│   ├── stock_prediction_main/urls.py
+│   ├── stock_prediction_main/wsgi.py
 │   ├── keras_model.keras
 │   ├── manage.py
 │   ├── requirements.txt
