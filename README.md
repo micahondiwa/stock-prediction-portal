@@ -113,7 +113,7 @@ stock-prediction-portal/
 ├── Resources/
 │   ├── notebooks/
 │   │   └── stock_prediction_using_LSTM.ipynb
-│   ├── screenshots/
+│   ├── images/
 │   │   ├── register.png
 │   │   ├── dashboard.png
 │   │   └── dashboard-1.png
