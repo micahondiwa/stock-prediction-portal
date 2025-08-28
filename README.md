@@ -33,7 +33,10 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 **Database**
 - SQLite
 
-## 4. Project Structure
+## 4. Machine Learning Model (LSTM)
+
+
+## 5. Project Structure
 ```
 stock-prediction-portal/
 │
@@ -119,7 +122,7 @@ stock-prediction-portal/
 ├── .gitignore
 ```
 
-## 5. Connecting React and Django with Axios
+## 6. Connecting React and Django with Axios
 
 **A. Authentication (Login Example)**
 
@@ -233,7 +236,7 @@ DATABASES = {
     }
 }
 ```
-## 6. Contributing
+## 7. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
 **How to Contribute**
@@ -260,7 +263,7 @@ git push origin feature/your-feature-name
 - Ensure all tests pass before submitting a pull request.
 - For major changes, please open an issue first to discuss what you’d like to change.
 
-## 7. Setup Instructions
+## 8. Setup Instructions
 
 ```
 git clone https://github.com/micahondiwa/stock-prediction-portal.git
@@ -290,6 +293,9 @@ The frontend runs ar ```http://localhost:5173/```
 - **Backend env**: Create a ```.env``` file at the project root (same level as manage.py file). Use [djecrety](https://djecrety.ir/) to generate a django secret key. Store the key as ```SECRET_KEY``` inside the .env file. Also set ```DEBGU=TRUE``` inside the .env file. 
 
 - **Frontent env**: Create a ```.env``` file at the root of the frontend-react folder. Set the backend root and the base api as ```VITE_BACKEND_BASE_API=http://127.0.0.1:8000/api/v1``` and ```VITE_BACKEND_ROOT=http://127.0.0.1:8000/```. 
+
+**Train Your Own Model**
+You can train your own model. A starter code (jupyter Notebook) is available on the [Resources](Resources). The default code saves the trained model in the [Resources](Resources) folder. Therefore, without changing that, you will need to manually copy your trained model to the backend directory - same root folder as the manage.py file. 
 
 **Bonus**
 - Use [Toptal](https://www.toptal.com/developers/gitignore) to generate a .gitignore file for react and django. 
