@@ -119,7 +119,8 @@ stock-prediction-portal/
 ├── .gitignore
 ```
 
-**5. Connecting React and Django with Axios**
+## 5. Connecting React and Django with Axios
+
 **A. Authentication (Login Example)**
 
 ```
