@@ -60,7 +60,7 @@ stock-prediction-portal/
 
 
 **5. Connecting React and Django with Axios**
-**1. Authentication (Login Example)**
+**A. Authentication (Login Example)**
 
 ```
 import axios from "axios";
@@ -78,3 +78,51 @@ const handleLogin = async (userData) => {
     }
 };
 ```
+
+**B. Fetching Predictions from Backend**
+```
+const handlePrediction = async () => {
+    try {
+        const token = localStorage.getItem("accessToken");
+        const response = await axios.post(
+            "http://127.0.0.1:8000/api/v1/predict/",
+            { ticker },
+            { headers: { Authorization: `Bearer ${token}` } }
+        );
+
+        setPrediction(response.data.prediction);
+        setPlots({
+            plot: `data:image/png;base64,${response.data.plot_img}`,
+            dma100: `data:image/png;base64,${response.data.plot_100_dma}`,
+            dma200: `data:image/png;base64,${response.data.plot_200_dma}`,
+        });
+
+    } catch (error) {
+        console.error("Prediction request failed", error);
+        alert("Enter the correct ticker.");
+    }
+};
+
+```
+
+**C. Displaying Plots in React**
+```
+{plots.plot && <img src={plots.plot} alt="Stock Plot" />}
+{plots.dma100 && <img src={plots.dma100} alt="100 DMA Plot" />}
+{plots.dma200 && <img src={plots.dma200} alt="200 DMA Plot" />}
+
+```
+
+**6. Setup Instructions**
+```git clone ...``
+**Backend**
+```
+cd backend-drf
+python -m venv env
+source env/bin/activate   # Windows: env\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
+
+**Frontend**
