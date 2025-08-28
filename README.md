@@ -13,4 +13,4 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 ## 2. Features
 
 - **User Authentication** - Register a new user/account. Secure login with JWT access and refresh tockens. 
-- 
+- **Stock prediction Dashboard** - Part of the protected view that is accessible only after login. 
