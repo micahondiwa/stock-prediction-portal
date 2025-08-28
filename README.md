@@ -222,7 +222,17 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 ```
+The ```media``` location handles file uploads, including the plots generated.
 
+- Including base directory for the database:
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+```
 ## 6. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
