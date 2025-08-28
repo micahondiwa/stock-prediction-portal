@@ -44,9 +44,17 @@ stock-prediction-portal/
 │   ├── accounts/tests.py
 │   ├── accounts/views.py
 │   ├── api/migrations/__init__.py
-│   ├── api/migrations/__init__.py
-│   ├── media/migrations/__init__.py
-│   ├── stock_prediction_main/ 
+│   ├── api/migrations/admin.py
+│   ├── api/migrations/apps.py
+│   ├── api/migrations/models.py
+│   ├── api/migrations/serializers.py
+│   ├── api/migrations/tests.py
+│   ├── api/migrations/urls.py
+│   ├── api/migrations/utils.py
+│   ├── api/migrations/views.py
+│   ├── media/ # Stores generated plots
+│   ├── stock_prediction_main/asgi.py
+│   ├── stock_prediction_main/
 │   ├── keras_model.keras
 │   ├── manage.py
 │   ├── requirements.txt
