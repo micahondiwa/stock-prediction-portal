@@ -230,3 +230,6 @@ The frontend runs ar ```http://localhost:5173/```
 
 **Bonus**
 - Use [Toptal](https://www.toptal.com/developers/gitignore) to generate a .gitignore file for react and django. 
+
+**Contributors**
+- [Micah Ondiwa](https://github.com/micahondiwa)
