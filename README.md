@@ -23,6 +23,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - JWT Authentication (djangorestframework-simplejwt).
 - Machine Learning model (pretrained LSTM model saved as keras) integration for stock predictions.
 - Matplotlib for plot generation.
+- Using cors to allow request from react frontend
 
 **Frontend (React + Vite)**
 - React with Tailwind CSS for styling.
