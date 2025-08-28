@@ -185,8 +185,15 @@ git checkout -b feature/your-feature-name
 ```
 git commit -m "feat: add new feature"
 ````
-4. 
+4. Push to your fork
 
+```
+git push origin feature/your-feature-name
+````
+5. Open a Pull Request to the main branch
+
+**Contribution Guidelines**
+-  Follow PEP8
 
 **7. Setup Instructions**
 
