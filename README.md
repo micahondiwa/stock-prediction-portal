@@ -10,3 +10,4 @@ This is a full-stack web application that is build using React (Frontend) and Dj
 The core idea of the project is to demonstrate how to intergrate pre-trained machine learning models in Django with a modern frontend, connnected via axis. 
 
 
+## 2. Features 
