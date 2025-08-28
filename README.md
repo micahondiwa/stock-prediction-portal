@@ -21,6 +21,40 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 **Backend (Django REST FRAMEWORK)**
 - Django REST Framework for API endpoints.
 - JWT Authentication (djangorestframework-simplejwt).
-- Machine Learning model integration for stock predictions.
+- Machine Learning model (pretrained LSTM model saved as keras) integration for stock predictions.
 - Matplotlib for plot generation.
 
+**Frontend (React + Vite)**
+- React with Tailwind CSS for styling.
+- Axios for making API requests to Django backend.
+- React Router for navigation.
+
+**Database**
+- SQLite
+
+**Project Structure**
+stock-prediction-portal/
+│
+├── backend-drf/
+│   ├── manage.py
+│   ├── requirements.txt
+│   ├── <Django project folder>/
+│   ├── <prediction app>/
+│   └── ... other Django files
+│
+├── frontend-react/
+│   ├── src/
+│   │   ├── pages/            # Login, Register, Dashboard
+│   │   ├── components/       # shared UI elements
+│   │   └── main.jsx / App.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── README.md
+├── .gitignore
+├── dashboard-1.png           # Screenshots
+├── dashboard.png
+├── home.png
+├── login.png
+├── register.png
+└── requirements.txt          # (Possibly duplicate—ensure backend uses the correct one)
