@@ -18,7 +18,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - **Error Handling** - Alerts and error messages for inavlid credentials, tickers, and failed requests.  - React + TailwindCSS.
 
 ## 3. Teck Stack 
-**Backend (Django REST FRAMEWORK)**
+**Backend (Django REST Framework)**
 - Django REST Framework for API endpoints.
 - JWT Authentication (djangorestframework-simplejwt).
 - Machine Learning model (pretrained LSTM model saved as keras) integration for stock predictions.
