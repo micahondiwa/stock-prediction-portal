@@ -58,7 +58,7 @@ stock-prediction-portal/
 │
 ├── backend-drf/
 │   ├── accounts/
-│   │   ├── migrations/         # Auto-generated migrations only
+│   │   ├── migrations/         
 │   │   │   └── __init__.py
 │   │   ├── __init__.py
 │   │   ├── admin.py
@@ -73,7 +73,7 @@ stock-prediction-portal/
 │   │   └── utils.py (if needed)
 │   │
 │   ├── api/
-│   │   ├── migrations/         # Auto-generated migrations only
+│   │   ├── migrations/        
 │   │   │   └── __init__.py
 │   │   ├── __init__.py
 │   │   ├── apps.py
@@ -86,16 +86,16 @@ stock-prediction-portal/
 │   │   │   ├── __init__.py
 │   │   │   └── test_api.py
 │   │
-│   ├── media/                  # Stores generated plots, predictions, etc.
+│   ├── media/                  
 │   │
-│   ├── stock_prediction_main/  # Django project settings
+│   ├── stock_prediction_main/  
 │   │   ├── __init__.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
 │   │
-│   ├── keras_model.keras       # Pre-trained ML model
+│   ├── keras_model.keras       
 │   ├── manage.py
 │   ├── requirements.txt
 │
