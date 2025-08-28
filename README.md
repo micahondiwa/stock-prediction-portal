@@ -61,3 +61,20 @@ stock-prediction-portal/
 
 **5. Connecting React and Django with Axios**
 **1. Authentication (Login Example)**
+
+```
+import axios from "axios";
+
+const handleLogin = async (userData) => {
+    try {
+        const response = await axios.post("http://127.0.0.1:8000/api/v1/token/", userData);
+        localStorage.setItem('accessToken', response.data.access);
+        localStorage.setItem('refreshToken', response.data.refresh);
+        console.log("Login successful");
+        navigate("/dashboard");
+    } catch (error) {
+        console.error("Invalid Credentials");
+        alert("Invalid username or password");
+    }
+};
+```
