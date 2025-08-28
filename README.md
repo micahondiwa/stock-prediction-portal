@@ -15,4 +15,4 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - **User Authentication** - Register a new user/account. Secure login with JWT access and refresh tockens. 
 - **Stock prediction Dashboard** - Part of the protected view that is accessible only after login. Allows logged in user to input tickers and fetch prediction. Backend model processes the request and gerenerates predictions. 
 - **Visualization** - Also part of the dashboard. Backend dynamically generates the plots using `matplotlib` library. React frontend displays the plots via the `<img /> ` tags. 
-- **Error Handling** - 
+- **Error Handling** - Alerts and error messages for inavlid credentials, tickers, and failed requests.  - React + Tailwindcss
