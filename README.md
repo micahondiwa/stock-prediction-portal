@@ -175,7 +175,7 @@ const handlePrediction = async () => {
 **6. Contributing** 
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
-
+**How to Contribute**
 
 **7. Setup Instructions**
 
