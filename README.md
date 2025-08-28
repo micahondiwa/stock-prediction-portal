@@ -93,9 +93,7 @@ stock-prediction-portal/
 │   ├── register.png
 │   ├── dashboard.png
 │   ├── dashboard-1.png
-
-
-
+```
 
 **5. Connecting React and Django with Axios**
 **A. Authentication (Login Example)**
