@@ -175,7 +175,7 @@ const handlePrediction = async () => {
 ```
 
 **D. Important/Notable Settings**  in settings.py
-- Using ```python-decouple``` to load senstive variables like ```SECRET_KEY``` and ```DUBUG```:
+- Using [```python-decouple```](https://pypi.org/project/python-decouple/) to load senstive variables like ```SECRET_KEY``` and ```DUBUG```:
 ```
 from decouple import config
 SECRET_KEY = config('SECRET_KEY')
