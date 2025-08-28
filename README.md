@@ -193,7 +193,10 @@ git push origin feature/your-feature-name
 5. Open a Pull Request to the main branch
 
 **Contribution Guidelines**
--  Follow PEP8
+-  Follow [PEP8](https://peps.python.org/pep-0008/) style for Python code and standard React conventions for frontend.
+- Add/update documentation where needed.
+- Ensure all tests pass before submitting a pull request.
+- For major changes, please open an issue first to discuss what you’d like to change.
 
 **7. Setup Instructions**
 
