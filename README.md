@@ -199,3 +199,4 @@ The frontend runs ar ```http://localhost:5173/```
 
 **Environment Variables Management**
 - **Backend env**: Create a ```.env``` file at the project root (same level as manage.py file). Use [djecrety](https://djecrety.ir/) to generate a django secret key. Store the key as ```SECRET_KEY``` inside the .env file. Also set ```DEBGU=TRUE``` inside the .env file. 
+- **Frontent env**: Create a ```.env``` file at the root of the frontend-react folder. Set the backend root and the base api as ```VITE_BACKEND_BASE_API=http://127.0.0.1:8000/api/v1``` and ```VITE_BACKEND_ROOT=http://127.0.0.1:8000/```. 
