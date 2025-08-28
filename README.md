@@ -175,7 +175,7 @@ const handlePrediction = async () => {
 **6. Setup Instructions**
 ```
 git clone https://github.com/micahondiwa/stock-prediction-portal.git
-``
+```
 **Backend**
 ```
 cd backend-drf
