@@ -33,7 +33,8 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - SQLite
 
 **4. Project Structure**
-stock-prediction-portal/
+
+```stock-prediction-portal/
 │
 ├── backend-drf/
 │   ├── accounts/migrations/__init__.py
@@ -92,8 +93,7 @@ stock-prediction-portal/
 │   ├── stock_prediction_using_LSTM.ipynb
 │   ├── register.png
 │   ├── dashboard.png
-│   ├── dashboard-1.png
-```
+│   ├── dashboard-1.png```
 
 **5. Connecting React and Django with Axios**
 **A. Authentication (Login Example)**
