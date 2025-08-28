@@ -279,7 +279,7 @@ git push origin feature/your-feature-name
 - Ensure all tests pass before submitting a pull request.
 - For major changes, please open an issue first to discuss what you’d like to change.
 
-## 8. Setup Instructions
+**Setup Instructions**
 
 ```
 git clone https://github.com/micahondiwa/stock-prediction-portal.git
