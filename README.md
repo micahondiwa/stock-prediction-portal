@@ -35,6 +35,8 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 
 ## 4. Machine Learning Model (LSTM)
 
+The stock prediction engine is powered by a Long Short-Term Memory (LSTM) neural network built with TensorFlow/Keras. The full code for data retrieval, EDA and model training is available in the [Resources](Resources) folder. 
+**Model Architecture**
 
 ## 5. Project Structure
 ```
