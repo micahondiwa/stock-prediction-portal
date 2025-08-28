@@ -33,7 +33,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 **Database**
 - SQLite
 
-**4. Project Structure**
+## 4. Project Structure
 ```
 stock-prediction-portal/
 │
