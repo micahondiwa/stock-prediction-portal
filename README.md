@@ -181,6 +181,22 @@ from decouple import config
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 ```
+- Enabling [```corsheaders```](https://pypi.org/project/django-cors-headers/) middleware so that the React frontend can call Django APIs:
+```
+INSTALLED_APPS = [
+    ...
+    'corsheaders',
+]
+
+MIDDLEWARE = [
+    ...
+    "corsheaders.middleware.CorsMiddleware",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173'
+]
+```
 
 ## 6. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
