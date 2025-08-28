@@ -36,22 +36,55 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 stock-prediction-portal/
 │
 ├── backend-drf/
+│   ├── accounts/migrations/__init__.py
+│   ├── accounts/admin.py
+│   ├── accounts/apps.py
+│   ├── accounts/models.py
+│   ├── accounts/serializers.py
+│   ├── accounts/tests.py
+│   ├── accounts/views.py
+│   ├── api/migrations/__init__.py
+│   ├── api/migrations/__init__.py
+│   ├── media/migrations/__init__.py
+│   ├── stock_prediction_main/ 
+│   ├── keras_model.keras
 │   ├── manage.py
 │   ├── requirements.txt
-│   ├── <Django project folder>/
-│   ├── <prediction app>/
-│   └── ... other Django files
 │
 ├── frontend-react/
 │   ├── src/
-│   │   ├── pages/            # Login, Register, Dashboard
-│   │   ├── components/       # shared UI elements
-│   │   └── main.jsx / App.jsx
+│   │   ├── assets/  
+│   │   │         ├──css/ style.css  
+│   │   │         ├──images/logo.png        
+│   │   ├── components/
+│   │   │         ├──dashboard/Dashboard.jsx 
+│   │   │         ├── Button.jsx
+│   │   │         ├── Footer.jsx
+│   │   │         ├── Header.jsx
+│   │   │         ├── Login.jsx
+│   │   │         ├── Main.jsx
+│   │   │         ├── Register.jsx
+│   │   └── App.css
+│   │   └── App.jsx
+│   │   └── AuthProvider.jsx
+│   │   └── axiosInstance.jsx
+│   │   └── main.jsx
+│   │   └── PrivateRoute.jsx
+│   │   └── PublicRoute.jsx
+│   └── index.html
 │   ├── package.json
+│   ├── package.lock.json
 │   └── vite.config.js
 │
 ├── README.md
 ├── .gitignore
+├── Resources/
+│   ├── stock_prediction_using_LSTM.ipynb
+│   ├── register.png
+│   ├── dashboard.png
+│   ├── dashboard-1.png
+
+
 
 
 **5. Connecting React and Django with Axios**
