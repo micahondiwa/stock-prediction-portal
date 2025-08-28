@@ -33,67 +33,90 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - SQLite
 
 **4. Project Structure**
-
-```stock-prediction-portal/
+```
+stock-prediction-portal/
 │
 ├── backend-drf/
-│   ├── accounts/migrations/__init__.py
-│   ├── accounts/admin.py
-│   ├── accounts/apps.py
-│   ├── accounts/models.py
-│   ├── accounts/serializers.py
-│   ├── accounts/tests.py
-│   ├── accounts/views.py
-│   ├── api/migrations/__init__.py
-│   ├── api/migrations/admin.py
-│   ├── api/migrations/apps.py
-│   ├── api/migrations/models.py
-│   ├── api/migrations/serializers.py
-│   ├── api/migrations/tests.py
-│   ├── api/migrations/urls.py
-│   ├── api/migrations/utils.py
-│   ├── api/migrations/views.py
-│   ├── media/ # Stores generated plots
-│   ├── stock_prediction_main/asgi.py
-│   ├── stock_prediction_main/settings.py
-│   ├── stock_prediction_main/urls.py
-│   ├── stock_prediction_main/wsgi.py
-│   ├── keras_model.keras
+│   ├── accounts/
+│   │   ├── migrations/         # Auto-generated migrations only
+│   │   │   └── __init__.py
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── views.py
+│   │   ├── urls.py
+│   │   ├── tests/
+│   │   │   ├── __init__.py
+│   │   │   └── test_accounts.py
+│   │   └── utils.py (if needed)
+│   │
+│   ├── api/
+│   │   ├── migrations/         # Auto-generated migrations only
+│   │   │   └── __init__.py
+│   │   ├── __init__.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── serializers.py
+│   │   ├── views.py
+│   │   ├── urls.py
+│   │   ├── utils.py
+│   │   ├── tests/
+│   │   │   ├── __init__.py
+│   │   │   └── test_api.py
+│   │
+│   ├── media/                  # Stores generated plots, predictions, etc.
+│   │
+│   ├── stock_prediction_main/  # Django project settings
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   │
+│   ├── keras_model.keras       # Pre-trained ML model
 │   ├── manage.py
 │   ├── requirements.txt
 │
 ├── frontend-react/
 │   ├── src/
 │   │   ├── assets/  
-│   │   │         ├──css/ style.css  
-│   │   │         ├──images/logo.png        
+│   │   │   ├── css/style.css  
+│   │   │   └── images/logo.png        
 │   │   ├── components/
-│   │   │         ├──dashboard/Dashboard.jsx 
-│   │   │         ├── Button.jsx
-│   │   │         ├── Footer.jsx
-│   │   │         ├── Header.jsx
-│   │   │         ├── Login.jsx
-│   │   │         ├── Main.jsx
-│   │   │         ├── Register.jsx
-│   │   └── App.css
-│   │   └── App.jsx
-│   │   └── AuthProvider.jsx
-│   │   └── axiosInstance.jsx
-│   │   └── main.jsx
-│   │   └── PrivateRoute.jsx
+│   │   │   ├── dashboard/Dashboard.jsx 
+│   │   │   ├── Button.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Main.jsx
+│   │   │   ├── Register.jsx
+│   │   │
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── AuthProvider.jsx
+│   │   ├── axiosInstance.jsx
+│   │   ├── main.jsx
+│   │   ├── PrivateRoute.jsx
 │   │   └── PublicRoute.jsx
-│   └── index.html
+│   │
+│   ├── index.html
 │   ├── package.json
-│   ├── package.lock.json
+│   ├── package-lock.json
 │   └── vite.config.js
+│
+├── Resources/
+│   ├── notebooks/
+│   │   └── stock_prediction_using_LSTM.ipynb
+│   ├── screenshots/
+│   │   ├── register.png
+│   │   ├── dashboard.png
+│   │   └── dashboard-1.png
 │
 ├── README.md
 ├── .gitignore
-├── Resources/
-│   ├── stock_prediction_using_LSTM.ipynb
-│   ├── register.png
-│   ├── dashboard.png
-│   ├── dashboard-1.png```
+```
 
 **5. Connecting React and Django with Axios**
 **A. Authentication (Login Example)**
