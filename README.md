@@ -172,8 +172,12 @@ const handlePrediction = async () => {
 {plots.dma200 && <img src={plots.dma200} alt="200 DMA Plot" />}
 
 ```
+**6. Contributing** 
+Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
-**6. Setup Instructions**
+
+
+**7. Setup Instructions**
 
 ```
 git clone https://github.com/micahondiwa/stock-prediction-portal.git
