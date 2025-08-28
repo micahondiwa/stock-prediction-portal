@@ -173,7 +173,7 @@ const handlePrediction = async () => {
 {plots.dma200 && <img src={plots.dma200} alt="200 DMA Plot" />}
 
 ```
-**6. Contributing** 
+## 6. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
 **How to Contribute**
