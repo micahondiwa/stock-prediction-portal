@@ -207,6 +207,13 @@ REST_FRAMEWORK = {
 }
 
 ```
+- Configuring expiry time for the both access and refresh tokens: 
+```
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=15),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+}
+```
 
 ## 6. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
