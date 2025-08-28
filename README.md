@@ -173,6 +173,15 @@ const handlePrediction = async () => {
 {plots.dma200 && <img src={plots.dma200} alt="200 DMA Plot" />}
 
 ```
+
+**D. Important/Notable Settings**  in settings.py
+- Using ```python-decouple``` to load senstive variables like ```SECRET_KEY``` and ```DUBUG```:
+```
+from decouple import config
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=False, cast=bool)
+```
+
 ## 6. Contributing
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
