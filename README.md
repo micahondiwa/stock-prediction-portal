@@ -139,7 +139,7 @@ const handlePrediction = async () => {
     }
 };
 
-```
+
 
 **C. Displaying Plots in React**
 ```
@@ -161,6 +161,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 The django backend runs at ```http://127.0.0.1:8000/.```
+
 **Frontend**
 ```
 cd frontend-react
@@ -169,3 +170,5 @@ npm run dev
 ```
 
 The frontend runs ar ```http://localhost:5173/```
+
+
