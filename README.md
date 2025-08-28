@@ -176,6 +176,17 @@ const handlePrediction = async () => {
 Contributions are welcome including fixing bugs, improving documentation, adding new features or training a new model. 
 
 **How to Contribute**
+1. Fork the repository
+2. Create a feature branch:
+```
+git checkout -b feature/your-feature-name
+```
+3. Commit your changes
+```
+git commit -m "feat: add new feature"
+````
+4. 
+
 
 **7. Setup Instructions**
 
