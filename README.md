@@ -19,16 +19,16 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 
 ## 3. Teck Stack 
 **Backend (Django REST Framework)**
-- Django REST Framework for API endpoints.
-- JWT Authentication (djangorestframework-simplejwt).
+- [Django REST Framework](https://www.django-rest-framework.org/) for API endpoints.
+- JWT Authentication ([djangorestframework-simplejwt](https://www.django-rest-framework.org/api-guide/authentication/)).
 - Machine Learning model (pretrained LSTM model saved as keras) integration for stock predictions.
-- Matplotlib for plot generation.
-- Using cors to allow request from react frontend
+- [Matplotlib](https://matplotlib.org/) for plot generation.
+- Using [django-cors-headers](https://pypi.org/project/django-cors-headers/) to allow request from react frontend
 
 **Frontend (React + Vite)**
-- React with Tailwind CSS for styling.
-- Axios for making API requests to Django backend.
-- React Router for navigation.
+- React with [TailwindCSS](https://tailwindcss.com/) for styling.
+- [Axios](https://axios-http.com/docs/intro) for making API requests to Django backend.
+- [React Router](https://www.npmjs.com/package/react-router-dom) for navigation.
 
 **Database**
 - SQLite
