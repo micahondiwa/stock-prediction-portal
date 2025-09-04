@@ -314,7 +314,7 @@ The frontend runs ar ```http://localhost:5173/```
 - You can train your own model. A starter code (jupyter Notebook) is available on the [Resources](Resources). The default code saves the trained model in the [Resources](Resources) folder. Therefore, without changing that, you will need to manually copy your trained model to the backend directory - same root folder as the manage.py file. 
 
 **Bonus**
-- Use [Toptal](https://www.toptal.com/developers/gitignore) to generate a .gitignore file for react and django. 
+- Use [Toptal](https://www.toptal.com/developers/gitignore) to auto-generate a single .gitignore file for react and django. 
 
 **Contributors**
 - [Micah Ondiwa](https://github.com/micahondiwa)
