@@ -22,7 +22,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - JWT Authentication ([djangorestframework-simplejwt](https://www.django-rest-framework.org/api-guide/authentication/)).
 - Machine Learning model (pretrained LSTM model saved as keras) integration for stock predictions.
 - [Matplotlib](https://matplotlib.org/) for plot generation.
-- Using [django-cors-headers](https://pypi.org/project/django-cors-headers/) to allow request from react frontend
+- Using [django-cors-headers](https://pypi.org/project/django-cors-headers/) to allow request from react frontend.
 
 **Frontend (React + Vite)**
 - React with [TailwindCSS](https://tailwindcss.com/) for styling.
