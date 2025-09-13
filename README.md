@@ -232,7 +232,7 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
 ```
-The above seetings means that The frontend must store access & refresh tokens (usually in localStorage or httpOnly cookies). Tokens expire every 15 minutes; frontend should refresh before expiry.
+The above seetings means that The frontend must store access & refresh tokens (usually in localStorage or httpOnly cookies). Tokens expire every 15 minutes; frontend should refresh before expiry
 
 - Static and media files locations:
 ```
