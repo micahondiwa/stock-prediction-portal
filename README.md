@@ -6,7 +6,7 @@ This is a full-stack web application that is build using React (Frontend) and Dj
 -  Access a dashboard after log in where they can input a valid stock ticker for price prediction. 
 - View the results and dynamically generated plots including stock price trends and moving averages. 
 
-The core idea of the project is to demonstrate how to intergrate pre-trained machine learning models in Django with a modern frontend, connnected via axios. The project uses the in-built Django user model 
+The core idea of the project is to demonstrate how to intergrate pre-trained machine learning models in Django with a modern frontend, connnected via axios. The project uses the in-built Django user model.
 
 
 ## 2. Features
