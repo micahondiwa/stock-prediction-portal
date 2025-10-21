@@ -42,7 +42,6 @@ model.add(Dense(1))
 - Second LSTM Layer: 64 units, processes the sequence and outputs a final hidden state.
 - Dense Layer (25 neurons): Learns intermediate representations of patterns in stock price movement.
 - Dense Output Layer (1 neuron): Outputs the predicted stock price.
-
 ## 5. Project Structure
 ```
 stock-prediction-portal/
