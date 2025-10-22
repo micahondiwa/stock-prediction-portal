@@ -148,7 +148,6 @@ const handleLogin = async (userData) => {
     }
 };
 ```
-
 **B. Fetching Predictions from Backend**
 ```
 const handlePrediction = async () => {
