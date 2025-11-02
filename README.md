@@ -269,7 +269,6 @@ git push origin feature/your-feature-name
 - For major changes, please open an issue first to discuss what you’d like to change.
 
 **Setup Instructions**
-
 ```
 git clone https://github.com/micahondiwa/stock-prediction-portal.git
 ```
