@@ -37,11 +37,11 @@ model.add(LSTM(units=64))
 model.add(Dense(25))
 model.add(Dense(1))
 ```
-- Input Layer: takes 100 time steps (historical stock prices) as input.
-- First LSTM Layer: 128 units with ReLU activation. return_sequences=True ensures the entire sequence is passed to the next LSTM layer.
-- Second LSTM Layer: 64 units, processes the sequence and outputs a final hidden state.
-- Dense Layer (25 neurons): Learns intermediate representations of patterns in stock price movement.
-- Dense Output Layer (1 neuron): Outputs the predicted stock price.
+- Input Layer: takes 100 time steps (historical stock prices) as input
+- First LSTM Layer: 128 units with ReLU activation. return_sequences=True ensures the entire sequence is passed to the next LSTM layer
+- Second LSTM Layer: 64 units, processes the sequence and outputs a final hidden state
+- Dense Layer (25 neurons): Learns intermediate representations of patterns in stock price movement
+- Dense Output Layer (1 neuron): Outputs the predicted stock price
 ## 5. Project Structure
 ```
 stock-prediction-portal/
