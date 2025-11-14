@@ -21,7 +21,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 **Frontend (React + Vite)**
 - React with [TailwindCSS](https://tailwindcss.com/) for styling.
 - [Axios](https://axios-http.com/docs/intro) for making API requests to Django backend.
-- [React Router](https://www.npmjs.com/package/react-router-dom) for navigation.
+- [React Router](https://www.npmjs.com/package/react-router-dom) for navigation
 
 **Database**
 - SQLite
