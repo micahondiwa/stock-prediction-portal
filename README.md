@@ -11,6 +11,7 @@ The core idea of the project is to demonstrate how to intergrate pre-trained mac
 - **Visualization** - Also part of the dashboard. Backend dynamically generates the plots using `matplotlib` library. React frontend displays the plots via the `<img /> ` tags. 
 - **Error Handling** - Alerts and error messages for inavlid credentials, tickers, and failed requests.  - React + TailwindCSS.
 ## 3. Teck Stack 
+
 **Backend (Django REST Framework)**
 - [Django REST Framework](https://www.django-rest-framework.org/) for API endpoints.
 - JWT Authentication ([djangorestframework-simplejwt](https://www.django-rest-framework.org/api-guide/authentication/)).
